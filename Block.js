@@ -1,4 +1,4 @@
-class Block{
+class Block {
   constructor(x, y, width, height) {
       var options = {
           restitution :0.4,
@@ -16,7 +16,7 @@ class Block{
         console.log(this.body.speed);
         if(this.body.speed < 3){
           imageMode(CENTER);
-          image(this.image,pos.x,pos.y,this.width,this.height)
+          image(this.image,pos.x,pos.y,this.width,this.height);
         }
         else{
           World.remove(world, this.body);
